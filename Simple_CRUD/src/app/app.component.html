@@ -1,0 +1,38 @@
+<!--
+<div class="container">
+  <div class="todo-list">
+    <h1>Todo List</h1>
+    <div>
+      <input [(ngModel)]="todo.Title" type="text" placeholder="Add a new task..." />
+      <button [disabled]="!todo.Title" (click)="addTodo()" type="submit">{{ todo.Id?'Update' :'Add'}}</button>
+    </div>
+    <ul>
+
+      <li *ngFor="let item of todoList">
+
+        <label for="task3"> {{item.Title}}</label>
+        <i (click)="editTodo(item)" class=" fa fa-pencil"></i>
+        <i (click)="delteTodo(item.Id)" class="fa fa-times"></i>
+
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="todo-list">
+    <h1>Todo List</h1>
+    <div>
+      <input  [(ngModel)]="todo.Title" type="text" placeholder="Add a new task..." />
+      <button [disabled]="!todo.Title" (click)="AddtodoList()" type="submit">{{todo.Id? 'Update' : 'Add'}}</button>
+    </div>
+
+    <ul>
+      <li *ngFor="let item of todoList">
+        <label for="task3"> {{item.Title}}</label>
+        <i (click)="Edit(item)" class=" fa fa-pencil"></i>
+        <i (click)="Delete(item.Id)" class="fa fa-times"></i>
+      </li>
+    </ul>
+  </div>
+</div>
