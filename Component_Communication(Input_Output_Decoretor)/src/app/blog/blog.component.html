@@ -1,0 +1,12 @@
+<div class="column">
+  <div>
+    <img [src]="blog.ImageUrl" alt="Blog Post image">
+    <h2>{{blog.Title}}</h2>
+    <p>{{blog.Description}}</p>
+  </div>
+  <div class="icon-column">
+    <i (click)="Like()" class="fa fa-thumbs-up"></i>
+    <i class="fa fa-comment"></i>
+    <i class="fa fa-star"></i>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="title">
+    <h1>Latest post</h1>
+  </div>
+  <div class="blog-post">
+    <div *ngFor="let blog of blogs">
+      <app-blog [blog]="blog"></app-blog>
+    <!-- Etar maddome parent to child data patalam. -->
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="title">
+    <h1>Featured post</h1>
+  </div>
+  <div class="blog-post">
+    <div *ngFor="let blog of featureBlogs">
+    <app-blog (OnLike)="Likes($event)"  [blog]="blog"></app-blog>
+    <!-- Etar maddome parent to child data patalam. -->
+    </div>
+  </div>
+</div>
