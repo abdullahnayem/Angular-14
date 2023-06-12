@@ -8,5 +8,5 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
   title = 'Component_Communication';
 
-  @ViewChild('calender',)
+  //@ViewChild('calender',)
 }
